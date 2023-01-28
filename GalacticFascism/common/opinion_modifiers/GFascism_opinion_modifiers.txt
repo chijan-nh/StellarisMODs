@@ -1,0 +1,196 @@
+# ファシスト！
+opinion_gfascism_fascist = {
+	trigger = {
+		is_country_type = default
+		NOR = {
+			AND = {
+				is_subject = yes
+				has_overlord = FROM
+				is_loyal_to = FROM
+				FROM = { has_valid_civic = civic_gfascism_fascist }
+			}
+			has_valid_civic = civic_shared_burden
+			has_valid_civic = civic_gfascism_fascist
+			has_valid_civic = civic_fanatic_purifiers
+			has_valid_civic = civic_hive_devouring_swarm
+			has_valid_civic = civic_machine_terminator
+		}
+		FROM = { has_valid_civic = civic_gfascism_fascist }
+	}
+	opinion = {
+		base = -100
+	}
+	#opinion = {
+	#	modifier = {
+	#		add = -100
+	#		is_country_type = default
+	#		NOR = {
+	#			has_valid_civic = civic_shared_burden
+	#			has_civic = civic_gfascism_fascist
+	#			has_valid_civic = civic_fanatic_purifiers
+	#			has_valid_civic = civic_hive_devouring_swarm
+	#			has_valid_civic = civic_machine_terminator
+	#		}
+	#		FROM = { has_civic = civic_gfascism_fascist }
+	#	}
+	#}
+}
+# 劣等種族！
+opinion_gfascism_fascist_vs_xeno = {
+	trigger = {
+		has_valid_civic = civic_gfascism_fascist
+		#FROM = { NOT = { is_same_species = FROMFROM } }
+		NOT = { 
+			is_same_species = FROM
+			FROM = { has_valid_civic = civic_gfascism_fascist }
+		}
+	}
+	opinion = {
+		base = -100
+	}
+	#opinion = {
+	#	modifier = {
+	#		add = -100
+	#		has_valid_civic = civic_gfascism_fascist
+	#		NOT = { is_same_species = FROM }
+	#	}
+	#}
+}
+# 銀河の枢軸
+opinion_gfascism_fascist_vs_fascist = {
+	trigger = {
+		has_valid_civic = civic_gfascism_fascist
+		#FROM = { NOT = { is_same_species = FROMFROM } }
+		FROM = { has_valid_civic = civic_gfascism_fascist }
+	}
+	opinion = {
+		base = 50
+		modifier = {
+			add = 100
+			is_same_species = FROM
+		}
+	}
+	#opinion = {
+	#	modifier = {
+	#		add = -100
+	#		has_valid_civic = civic_gfascism_fascist
+	#		NOT = { is_same_species = FROM }
+	#	}
+	#}
+}
+# 呪われしファシスト
+opinion_shared_burden_vs_gfascism_fascist = {
+	trigger = {
+		has_valid_civic = civic_shared_burden
+		NOR = {
+			has_civic = civic_gfascism_fascist
+			has_valid_civic = civic_fanatic_purifiers
+			has_valid_civic = civic_hive_devouring_swarm
+			has_valid_civic = civic_machine_terminator
+		}
+		FROM = { has_civic = civic_gfascism_fascist }
+	}
+	opinion = {
+		base = -200
+	}
+	#opinion = {
+	#	modifier = {
+	#		add = -200
+	#		has_valid_civic = civic_shared_burden
+	#		NOR = {
+	#			has_civic = civic_gfascism_fascist
+	#			has_valid_civic = civic_fanatic_purifiers
+	#			has_valid_civic = civic_hive_devouring_swarm
+	#			has_valid_civic = civic_machine_terminator
+	#		}
+	#		FROM = { has_civic = civic_gfascism_fascist }
+	#	}
+	#}
+}
+# 赤きペスト
+opinion_gfascism_fascist_vs_xeno_shared_burden = {
+	trigger = {
+		has_valid_civic = civic_gfascism_fascist
+		#FROM = { NOT = { is_same_species = FROMFROM } }
+		NOT = { is_same_species = FROM }
+		FROM = { has_valid_civic = civic_shared_burden }
+	}
+	opinion = {
+		base = -100
+	}
+	#opinion = {
+	#	modifier = {
+	#		add = -100
+	#		has_valid_civic = civic_gfascism_fascist
+	#		NOT = { is_same_species = FROM }
+	#		FROM = { has_valid_civic = civic_shared_burden }
+	#	}
+	#}
+}
+# 弁えた立場：ファシスト宗主国→属国
+opinion_gfascism_fascistoverlord_vs_vassal = {
+	trigger = {
+		has_valid_civic = civic_gfascism_fascist
+		is_overlord = yes
+		has_subject = FROM
+		#FROM = { NOT = { is_same_species = FROMFROM } }
+		#FROM = { has_valid_civic = civic_gfascism_fascist }
+	}
+	opinion = {
+		base = 50
+	}
+	#opinion = {
+	#	modifier = {
+	#		add = -100
+	#		has_valid_civic = civic_gfascism_fascist
+	#		NOT = { is_same_species = FROM }
+	#	}
+	#}
+}
+# 偉大な指導者：忠実な属国→ファシスト宗主国
+opinion_gfascism_loyalvassal_vs_fascistoverlord = {
+	trigger = {
+		is_subject = yes
+		has_overlord = FROM
+		is_loyal_to = FROM
+		FROM = { has_valid_civic = civic_gfascism_fascist }
+	}
+	opinion = {
+		base = 50
+	}
+	#opinion = {
+	#	modifier = {
+	#		add = -100
+	#		has_valid_civic = civic_gfascism_fascist
+	#		NOT = { is_same_species = FROM }
+	#	}
+	#}
+}
+# 悪辣な独裁者：不忠な属国→ファシスト宗主国
+opinion_gfascism_disloyalvassal_vs_fascistoverlord = {
+	trigger = {
+		is_subject = yes
+		has_overlord = FROM
+		is_disloyal_to = FROM
+		FROM = { has_valid_civic = civic_gfascism_fascist }
+	}
+	opinion = {
+		base = -50
+		modifier = {
+			add = -50
+			#OR = {
+			#	has_ethic = ethic_pacifist
+			#	has_ethic = ethic_fanatic_pacifist
+			#	has_ethic = ethic_egalitarian
+			#	has_ethic = ethic_fanatic_egalitarian
+			#}
+		}
+	}
+	#opinion = {
+	#	modifier = {
+	#		add = -100
+	#		has_valid_civic = civic_gfascism_fascist
+	#		NOT = { is_same_species = FROM }
+	#	}
+	#}
+}

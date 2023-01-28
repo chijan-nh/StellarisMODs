@@ -1,0 +1,10 @@
+﻿l_english:
+
+ RT_GFASCISM_FUEHRER:0 "Fuehrer"
+ RT_GFASCISM_FUEHRER_FEMALE:0 "$RT_GFASCISM_FUEHRER$"
+
+ gfascism_fascistic_regime:0 "Fascism"
+ gfascism_fascistic_regime_desc:0 "§LThis government is a fascistic form of autocracy, with the ruler serving as the undisputed head of the ruling party which is ultranationalistic and firmly in control of the state apparatus as one party dictatorship.§!"
+ gfascism_fascistic_regime_special:0 "Each Ruler can ..."
+ gov_gfascism_fascistic_regime:0 "Fascism"
+ gov_gfascism_fascistic_regime_desc:0 "This government is a fascistic form of autocracy, with the ruler serving as the undisputed head of the ruling party which is ultranationalistic and firmly in control of the state apparatus as one party dictatorship."

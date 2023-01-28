@@ -1,0 +1,10 @@
+﻿l_japanese:
+
+ RT_GFASCISM_FUEHRER:0 "総統"
+ RT_GFASCISM_FUEHRER_FEMALE:0 "$RT_GFASCISM_FUEHRER$"
+
+ gfascism_fascistic_regime:0 "ファシズム体制"
+ gfascism_fascistic_regime_desc:0 "§Lこの政治体制は、 ファシズム的な独裁制である。 統治者は超国家主義的な政党の党首でもあり、 一党独裁として国家機構を強く掌握している。 §!"
+ gfascism_fascistic_regime_special:0 "すべての統治者は……。"
+ gov_gfascism_fascistic_regime:0 "ファシズム体制"
+ gov_gfascism_fascistic_regime_desc:0 "§Lこの政治体制は、 ファシズム的な独裁制である。 統治者は超国家主義的な政党の党首でもあり、 一党独裁として国家機構を強く掌握している。 §!"

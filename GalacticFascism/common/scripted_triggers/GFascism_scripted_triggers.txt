@@ -1,0 +1,5 @@
+has_gfascism_fascist_government = {
+	OR = {
+		has_government = gov_gfascism_fascistic_regime
+	}
+}

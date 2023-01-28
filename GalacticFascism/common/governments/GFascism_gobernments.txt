@@ -1,0 +1,38 @@
+# ファシズム体制
+gov_gfascism_fascistic_regime = {
+	#ruler_title = RT_GRAND_MARSHAL
+	#ruler_title_female = RT_GRAND_MARSHAL_FEMALE
+	ruler_title = RT_GFASCISM_FUEHRER
+	ruler_title_female = RT_GFASCISM_FUEHRER_FEMALE
+
+	election_candidates = {
+		modifier = {
+			add = 500
+			leader_class = ruler
+		}
+		modifier = {
+			add = 10
+			leader_class = governor
+		}
+		modifier = {
+			add = 5
+			OR = {
+				leader_class = admiral
+				leader_class = general
+			}
+		}
+		modifier = {
+			add = 1
+			leader_class = scientist
+		}
+	}
+
+	possible = {
+		has_authority = auth_dictatorial
+		has_valid_civic = civic_gfascism_fascist
+	}
+
+	weight = {
+		base = 800
+	}
+}
