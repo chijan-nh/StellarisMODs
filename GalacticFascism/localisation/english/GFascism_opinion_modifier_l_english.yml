@@ -2,9 +2,13 @@
 
  opinion_gfascism_fascist:0 "Fascist"
  opinion_gfascism_fascist_vs_xeno:0 "Underspecies"
+ opinion_gfascism_material_fascist_vs_evangelising_zealots:0 "You are an idiot"
  opinion_gfascism_fascist_vs_fascist:0 "Axis of Galaxy"
  opinion_shared_burden_vs_gfascism_fascist:0 "Dark Fascist"
  opinion_gfascism_fascist_vs_xeno_shared_burden:0 "Red Plague"
+ opinion_gfascism_any_vs_black_sun:0 "Incomprehensible Esoteric Zealots"
+ opinion_gfascism_black_sun_vs_not_black_sun:0 "Underethics"
+ opinion_gfascism_black_sun_vs_same_sp_black_sun:0 "Esoteric Comrade"
  opinion_gfascism_fascistoverlord_vs_vassal:0 "To know your place"
  opinion_gfascism_loyalvassal_vs_fascistoverlord:0 "Great Leader"
  opinion_gfascism_disloyalvassal_vs_fascistoverlord:0 "Vicious Dictator"

@@ -1,0 +1,11 @@
+﻿l_japanese:
+
+ councilor_gfascism_fascist:0 "宣伝大臣"
+ councilor_gfascism_fascist_female:0 "$councilor_gfascism_fascist$"
+ councilor_gfascism_fascist_desc:0 "$TITLE$は帝国の宣伝と国民（自種族）への啓蒙を行い、精神的な動員を可能にする。"
+ councilor_gfascism_black_sun:0 "騎士団全国指導者"
+ councilor_gfascism_black_sun_female:0 "$councilor_gfascism_black_sun$"
+ councilor_gfascism_black_sun_desc:0 "$TITLE$は超教義的騎士団のリーダーとして反逆者を狩り、国民に最大限の節制を説いている。"
+ councilor_gfascism_corporatism:0 "階級調整官"
+ councilor_gfascism_corporatism_female:0 "$councilor_gfascism_corporatism$"
+ councilor_gfascism_corporatism_desc:0 "$TITLE$は帝国における各階級の全国組織同士の利害調整を行い、階級協調を実現する。"

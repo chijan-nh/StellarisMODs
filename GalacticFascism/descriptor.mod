@@ -1,4 +1,4 @@
-version="0.1.1"
+version="0.2.0"
 tags={
 	"Balance"
 	"Military"
@@ -6,5 +6,5 @@ tags={
 }
 name="Galactic Fascism"
 picture="thumbnail.png"
-supported_version="3.6.*"
+supported_version="3.8.*"
 remote_file_id="2922716876"

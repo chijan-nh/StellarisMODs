@@ -1,0 +1,11 @@
+﻿l_english:
+
+ councilor_gfascism_fascist:0 "Propaganda Minister"
+ councilor_gfascism_fascist_female:0 "$councilor_gfascism_fascist$"
+ councilor_gfascism_fascist_desc:0 "$TITLE$ propagandizes their empire and enlightens the citizens. This causes a spiritual mobilization."
+ councilor_gfascism_black_sun:0 "Order Leader"
+ councilor_gfascism_black_sun_female:0 "$councilor_gfascism_black_sun$"
+ councilor_gfascism_black_sun_desc:0 "$TITLE$ is the leader of the Esoteric Order. They execute traitors and preach the maximum temperance to the citezens."
+ councilor_gfascism_corporatism:0 "Class Collaboration Officer"
+ councilor_gfascism_corporatism_female:0 "$councilor_gfascism_corporatism$"
+ councilor_gfascism_corporatism_desc:0 "$TITLE$ coordinates the interests among the national organizations of each class in the empire to achieve class coordination."

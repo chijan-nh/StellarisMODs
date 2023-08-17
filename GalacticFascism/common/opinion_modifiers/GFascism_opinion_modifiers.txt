@@ -56,12 +56,57 @@ opinion_gfascism_fascist_vs_xeno = {
 	#	}
 	#}
 }
+# オカルトの悪徳：物質主義ファシスト→教えを説く狂信者
+opinion_gfascism_material_fascist_vs_evangelising_zealots = {
+	trigger = {
+		has_valid_civic = civic_gfascism_fascist
+		OR = {
+			has_ethic = ethic_materialist
+			has_ethic = ethic_fanatic_materialist
+		}
+		#FROM = { NOT = { is_same_species = FROMFROM } }
+		FROM = { 
+			has_ai_personality = evangelising_zealots
+		}
+	}
+	opinion = {
+		base = -100
+	}
+}
 # 銀河の枢軸
 opinion_gfascism_fascist_vs_fascist = {
 	trigger = {
 		has_valid_civic = civic_gfascism_fascist
 		#FROM = { NOT = { is_same_species = FROMFROM } }
 		FROM = { has_valid_civic = civic_gfascism_fascist }
+		if = {
+			limit = {
+				OR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+			FROM = {
+				NOR = {
+					has_ethic = ethic_spiritualist
+					has_ethic = ethic_fanatic_spiritualist
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_ethic = ethic_spiritualist
+					has_ethic = ethic_fanatic_spiritualist
+				}
+			}
+			FROM = {
+				NOR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+		}
 	}
 	opinion = {
 		base = 50
@@ -112,7 +157,7 @@ opinion_gfascism_fascist_vs_xeno_shared_burden = {
 	trigger = {
 		has_valid_civic = civic_gfascism_fascist
 		#FROM = { NOT = { is_same_species = FROMFROM } }
-		NOT = { is_same_species = FROM }
+		#NOT = { is_same_species = FROM }
 		FROM = { has_valid_civic = civic_shared_burden }
 	}
 	opinion = {
@@ -126,6 +171,42 @@ opinion_gfascism_fascist_vs_xeno_shared_burden = {
 	#		FROM = { has_valid_civic = civic_shared_burden }
 	#	}
 	#}
+}
+# 理解不能な狂信者：任意→エソナチ
+opinion_gfascism_any_vs_black_sun = {
+	trigger = {
+		FROM = { has_valid_civic = civic_gfascism_black_sun }
+		NOT = {
+			has_valid_civic = civic_gfascism_black_sun
+			is_same_species = FROM
+		}
+	}
+	opinion = {
+		base = -200
+	}
+}
+# 劣等志向：エソナチ→非エソナチ
+opinion_gfascism_black_sun_vs_not_black_sun = {
+	trigger = {
+		has_valid_civic = civic_gfascism_black_sun
+		NOT = {
+			FROM = { has_valid_civic = civic_gfascism_black_sun }
+		}
+	}
+	opinion = {
+		base = -400
+	}
+}
+# 超教義的同志：エソナチ同志かつ同種族
+opinion_gfascism_black_sun_vs_same_sp_black_sun = {
+	trigger = {
+		has_valid_civic = civic_gfascism_black_sun
+		FROM = { has_valid_civic = civic_gfascism_black_sun }
+		is_same_species = FROM
+	}
+	opinion = {
+		base = 1000
+	}
 }
 # 弁えた立場：ファシスト宗主国→属国
 opinion_gfascism_fascistoverlord_vs_vassal = {
