@@ -1,0 +1,5 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_diplomacy_status_is_coprosperity"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_is_coprosperity.dds"    }
+}

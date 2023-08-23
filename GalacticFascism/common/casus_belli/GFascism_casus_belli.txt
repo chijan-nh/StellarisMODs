@@ -2,7 +2,10 @@ cb_gfascism_annex = {
 	show_in_diplomacy = no
 	show_notification = no
 	potential = {
-		has_valid_civic = civic_gfascism_fascist
+		OR = {
+			has_valid_civic = civic_gfascism_fascist
+			has_valid_civic = civic_gfascism_yokusan
+		}
 	}
 	is_valid = {
 		#has_total_war_cb = yes
@@ -11,7 +14,10 @@ cb_gfascism_annex = {
 			is_country_type = awakened_fallen_empire
 			is_country_type = fallen_empire
 		}
-		has_valid_civic = civic_gfascism_fascist
+		OR = {
+			has_valid_civic = civic_gfascism_fascist
+			has_valid_civic = civic_gfascism_yokusan
+		}
 		NOT = { is_same_species = from }
 		NOT = { is_overlord_to = FROM }
 		OR = {

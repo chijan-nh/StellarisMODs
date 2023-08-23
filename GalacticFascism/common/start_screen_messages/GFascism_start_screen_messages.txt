@@ -1,6 +1,6 @@
 part = {
 	location = 1
-	localization = "START_SCREEN_PART_TWO_STAR_EMPIRE"
+	localization = "START_SCREEN_PART_ONE_FASCIST"
 
 	trigger = {
 		OR = {
@@ -13,3 +13,19 @@ part = {
 		}
 	}
 }
+
+#part = {
+#	location = 1
+#	localization = "START_SCREEN_PART_ONE_YOKUSAN"
+#
+#	trigger = {
+#		OR = {
+#			has_government = gov_gfascism_yokusan_taisei
+#		}
+#		NOR = {
+#			has_country_flag = custom_start_screen
+#			has_origin = origin_post_apocalyptic
+#			has_origin = origin_life_seeded
+#		}
+#	}
+#}

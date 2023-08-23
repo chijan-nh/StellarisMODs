@@ -2,6 +2,7 @@
 
  RT_GFASCISM_FUEHRER:0 "Fuehrer"
  RT_GFASCISM_FUEHRER_FEMALE:0 "$RT_GFASCISM_FUEHRER$"
+ START_SCREEN_PART_ONE_FASCIST:0 "In the chaotic early years of our history, many nation-states struggled for power and were eventually united under the most powerful state led by a strong leader. A new order was established under the unifier, sometimes dealing with insurgents who reduced the purity of the society, and a society of superior [GetAdj] was built. '[GetRulerTitle] command, we follow!'"
 
  gfascism_fascistic_regime:0 "Fascism"
  gfascism_fascistic_regime_desc:0 "§LThis government is a fascistic form of autocracy, with the ruler serving as the undisputed head of the ruling party which is ultranationalistic and firmly in control of the state apparatus as one party dictatorship.§!"

@@ -9,3 +9,6 @@
  councilor_gfascism_corporatism:0 "Class Collaboration Officer"
  councilor_gfascism_corporatism_female:0 "$councilor_gfascism_corporatism$"
  councilor_gfascism_corporatism_desc:0 "$TITLE$ coordinates the interests among the national organizations of each class in the empire to achieve class coordination."
+ councilor_gfascism_yokusan:0 "Prime Minister of Winged Regime"
+ councilor_gfascism_yokusan_female:0 "$councilor_gfascism_yokusan$"
+ councilor_gfascism_yokusan_desc:0 "$TITLE$ unites the legitimate parties of the empire and is responsible for the practicalities of governing acts as the head of government."

@@ -148,7 +148,7 @@ civic_gfascism_black_sun = {
 		planetary_ascension_effect_mult = 0.10
 		planetary_ascension_cost_mult = -0.05
 		tradition_cost_empire_size_mult = -0.10
-		pop_happiness = -0.20
+		pop_happiness = -0.25
 		pop_cat_worker_happiness = -0.10
 		pop_cat_worker_political_power = -0.25
 		pop_cat_slave_happiness = -0.50
@@ -224,3 +224,96 @@ civic_gfascism_corporatism = {
 	}
 }
 
+civic_gfascism_yokusan = {
+	modification = no
+	playable = { host_has_dlc = "Utopia" }
+	ai_playable = { host_has_dlc = "Utopia" }
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			#OR = {
+			OR = {
+				text = civic_tooltip_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+			#	OR = {
+			#		text = civic_tooltip_authoritarian
+			#		value = ethic_authoritarian
+			#		value = ethic_fanatic_authoritarian
+			#	}
+			#}
+			#NOR = {
+			#	text = civic_tooltip_not_xenophile
+			#	value = ethic_xenophile
+			#	value = ethic_fanatic_xenophile
+			#}
+			#NOR = {
+			#	text = civic_tooltip_not_egalitarian
+			#	value = ethic_egalitarian
+			#	value = ethic_fanatic_egalitarian
+			#}
+			#NOR = {
+			#	text = civic_tooltip_not_pacifist
+			#	value = ethic_pacifist
+			#	value = ethic_fanatic_pacifist
+			#}
+		}
+		authority = {
+			value = auth_imperial
+			#OR = {
+			#	value = auth_dictatorial
+			#	value = auth_imperial
+			#}
+		}
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_barbaric_despoilers
+				value = civic_gfascism_fascist
+				#value = civic_pompous_purists
+			}
+		}
+		origin = {
+			NOR = {
+				#value = origin_syncretic_evolution
+				value = origin_common_ground
+				value = origin_imperial_vassal
+				#value = origin_hegemon
+				#value = origin_toxic_knights
+			}
+		}
+	}
+	random_weight = {
+		base = 1000
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Utopia" }
+		}
+	}
+
+	description = "civic_tooltip_gfascism_yokusan_effects"
+	modifier = {
+		ship_fire_rate_mult = 0.05
+		army_damage_mult = 0.05
+		starbase_shipyard_build_cost_mult = -0.05
+		country_naval_cap_mult = 0.05
+		#country_unity_produces_mult = 0.05
+		#empire_size_pops_mult = -0.10
+		#pop_citizen_happiness = 0.05
+		planet_stability_add = 5
+		planet_jobs_ruler_produces_mult = 0.20
+		pop_cat_ruler_political_power = 0.50
+		pop_growth_speed = 0.10
+		#planet_jobs_purge_produces_mult = 0.50
+		#pop_purge_mult = -0.33
+	}
+}

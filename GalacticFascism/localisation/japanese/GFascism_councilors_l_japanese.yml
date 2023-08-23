@@ -9,3 +9,6 @@
  councilor_gfascism_corporatism:0 "階級調整官"
  councilor_gfascism_corporatism_female:0 "$councilor_gfascism_corporatism$"
  councilor_gfascism_corporatism_desc:0 "$TITLE$は帝国における各階級の全国組織同士の利害調整を行い、階級協調を実現する。"
+ councilor_gfascism_yokusan:0 "翼賛会総裁"
+ councilor_gfascism_yokusan_female:0 "$councilor_gfascism_yokusan$"
+ councilor_gfascism_yokusan_desc:0 "$TITLE$は帝国の合法的な諸政党を統合し、政府首班として統治行為の実務を担う。"

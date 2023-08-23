@@ -7,15 +7,26 @@ opinion_gfascism_fascist = {
 				is_subject = yes
 				has_overlord = FROM
 				is_loyal_to = FROM
-				FROM = { has_valid_civic = civic_gfascism_fascist }
+				FROM = {
+					OR = {
+						has_valid_civic = civic_gfascism_fascist
+						has_valid_civic = civic_gfascism_yokusan
+					}
+				}
 			}
 			has_valid_civic = civic_shared_burden
 			has_valid_civic = civic_gfascism_fascist
+			has_valid_civic = civic_gfascism_yokusan
 			has_valid_civic = civic_fanatic_purifiers
 			has_valid_civic = civic_hive_devouring_swarm
 			has_valid_civic = civic_machine_terminator
 		}
-		FROM = { has_valid_civic = civic_gfascism_fascist }
+		FROM = {
+			OR = {
+				has_valid_civic = civic_gfascism_fascist
+				has_valid_civic = civic_gfascism_yokusan
+			}
+		}
 	}
 	opinion = {
 		base = -100
@@ -47,6 +58,10 @@ opinion_gfascism_fascist_vs_xeno = {
 	}
 	opinion = {
 		base = -100
+		modifier = {
+			add = 50
+			FROM = { has_valid_civic = civic_gfascism_yokusan }
+		}
 	}
 	#opinion = {
 	#	modifier = {
@@ -76,9 +91,17 @@ opinion_gfascism_material_fascist_vs_evangelising_zealots = {
 # 銀河の枢軸
 opinion_gfascism_fascist_vs_fascist = {
 	trigger = {
-		has_valid_civic = civic_gfascism_fascist
+		OR = {
+			has_valid_civic = civic_gfascism_fascist
+			has_valid_civic = civic_gfascism_yokusan
+		}
 		#FROM = { NOT = { is_same_species = FROMFROM } }
-		FROM = { has_valid_civic = civic_gfascism_fascist }
+		FROM = {
+			OR = {
+				has_valid_civic = civic_gfascism_fascist
+				has_valid_civic = civic_gfascism_yokusan
+			}
+		}
 		if = {
 			limit = {
 				OR = {
@@ -128,15 +151,25 @@ opinion_shared_burden_vs_gfascism_fascist = {
 	trigger = {
 		has_valid_civic = civic_shared_burden
 		NOR = {
-			has_civic = civic_gfascism_fascist
+			has_valid_civic = civic_gfascism_fascist
+			has_valid_civic = civic_gfascism_yokusan
 			has_valid_civic = civic_fanatic_purifiers
 			has_valid_civic = civic_hive_devouring_swarm
 			has_valid_civic = civic_machine_terminator
 		}
-		FROM = { has_civic = civic_gfascism_fascist }
+		FROM = {
+			OR = {
+				has_valid_civic = civic_gfascism_fascist
+				has_valid_civic = civic_gfascism_yokusan
+			}
+		}
 	}
 	opinion = {
 		base = -200
+		add = 50
+		modifier = {
+			FROM = { has_valid_civic = civic_gfascism_yokusan }
+		}
 	}
 	#opinion = {
 	#	modifier = {
@@ -155,7 +188,11 @@ opinion_shared_burden_vs_gfascism_fascist = {
 # 赤きペスト
 opinion_gfascism_fascist_vs_xeno_shared_burden = {
 	trigger = {
-		has_valid_civic = civic_gfascism_fascist
+		#has_valid_civic = civic_gfascism_fascist
+		OR = {
+			has_valid_civic = civic_gfascism_fascist
+			has_valid_civic = civic_gfascism_yokusan
+		}
 		#FROM = { NOT = { is_same_species = FROMFROM } }
 		#NOT = { is_same_species = FROM }
 		FROM = { has_valid_civic = civic_shared_burden }
@@ -228,13 +265,47 @@ opinion_gfascism_fascistoverlord_vs_vassal = {
 	#	}
 	#}
 }
+# 共栄する子どもたち：翼賛体制→属国
+opinion_gfascism_yokusanoverlord_vs_vassal = {
+	trigger = {
+		has_valid_civic = civic_gfascism_yokusan
+		is_overlord = yes
+		has_subject = FROM
+		#FROM = { NOT = { is_same_species = FROMFROM } }
+		#FROM = { has_valid_civic = civic_gfascism_yokusan }
+	}
+	opinion = {
+		base = 100
+		modifier = {
+			add = 100
+			FROM = {
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+		}
+	}
+	#opinion = {
+	#	modifier = {
+	#		add = -100
+	#		has_valid_civic = civic_gfascism_yokusan
+	#		NOT = { is_same_species = FROM }
+	#	}
+	#}
+}
 # 偉大な指導者：忠実な属国→ファシスト宗主国
 opinion_gfascism_loyalvassal_vs_fascistoverlord = {
 	trigger = {
 		is_subject = yes
 		has_overlord = FROM
 		is_loyal_to = FROM
-		FROM = { has_valid_civic = civic_gfascism_fascist }
+		FROM = { 
+			OR = {
+				has_valid_civic = civic_gfascism_fascist
+				has_valid_civic = civic_gfascism_yokusan
+			}
+		}
 	}
 	opinion = {
 		base = 50
@@ -253,7 +324,12 @@ opinion_gfascism_disloyalvassal_vs_fascistoverlord = {
 		is_subject = yes
 		has_overlord = FROM
 		is_disloyal_to = FROM
-		FROM = { has_valid_civic = civic_gfascism_fascist }
+		FROM = { 
+			OR = {
+				has_valid_civic = civic_gfascism_fascist
+				has_valid_civic = civic_gfascism_yokusan
+			}
+		}
 	}
 	opinion = {
 		base = -50

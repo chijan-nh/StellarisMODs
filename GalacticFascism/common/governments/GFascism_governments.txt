@@ -36,3 +36,24 @@ gov_gfascism_fascistic_regime = {
 		base = 800
 	}
 }
+
+
+# 翼賛体制
+#gov_gfascism_yokusan_taisei = {
+#	ruler_title = RT_EMPEROR
+#	ruler_title_female = RT_EMPRESS
+#	heir_title = HT_CROWN_PRINCE
+#	heir_title_female = HT_CROWN_PRINCESS
+#
+#	use_regnal_names = yes
+#	dynastic_last_names = yes
+#
+#	possible = {
+#		has_authority = auth_imperial
+#		has_valid_civic = civic_gfascism_yokusan
+#	}
+#
+#	weight = {
+#		base = 800
+#	}
+#}

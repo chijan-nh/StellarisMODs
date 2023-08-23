@@ -72,3 +72,24 @@ councilor_gfascism_corporatism = {
 		tech_cost_empire_size_mult = -0.02
 	}
 }
+
+# 翼賛会総裁
+councilor_gfascism_yokusan = {
+	leader_class = { admiral general governor scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
+    civic = civic_gfascism_yokusan
+    #custom_tooltip = "councilor_gfascism_yokusan_desc"
+	modifier = {
+        empire_size_penalty_mult = -0.01
+		empire_size_pops_mult = -0.02
+		pop_amenities_usage_mult = -0.02
+		country_edict_fund_add = 10
+	}
+}
