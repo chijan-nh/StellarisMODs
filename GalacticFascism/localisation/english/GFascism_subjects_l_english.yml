@@ -3,7 +3,7 @@ l_english:
  SUBJECT_coprosperity:0 "Co-prosperity state"
  SUBJECT_DESC_coprosperity:0 ""
  preset_coprosperity:0 "Co-prosperity state"
- preset_coprosperity_desc:0 "Co-prosperity state is ..."
- preset_coprosperity_flavor_desc:0 "Co-prosperity is ..."
+ preset_coprosperity_desc:0 "Co-prosperity state is a vassal of Winged Regime Empire."
+ preset_coprosperity_flavor_desc:0 "Co-prosperity state is a vassal of Winged Regime Empire."
  naval_cap_coprosperity:0 "$preset_coprosperity$"
 
