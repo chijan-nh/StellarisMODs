@@ -15,7 +15,7 @@
 
 ## 追加
 
-# 宣伝大臣　v3.7の独裁制統治者の効果
+# 宣伝大臣　v3.7の独裁制統治者の効果+α
 councilor_gfascism_fascist = {
 	leader_class = { governor }
 	is_leader_possible = {
@@ -68,7 +68,7 @@ councilor_gfascism_corporatism = {
     #custom_tooltip = "councilor_gfascism_corporatism_desc"
 	modifier = {
         planet_jobs_upkeep_mult = -0.01
-		empire_size_pops_mult = -0.02
+		empire_size_mult = -0.02
 		tech_cost_empire_size_mult = -0.02
 	}
 }
@@ -91,5 +91,24 @@ councilor_gfascism_yokusan = {
 		empire_size_pops_mult = -0.02
 		pop_amenities_usage_mult = -0.02
 		country_edict_fund_add = 10
+	}
+}
+
+# 軍産複合体理事長
+councilor_gfascism_wages_of_destruction = {
+	leader_class = { admiral governor }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = governor
+		}
+	}
+    civic = civic_gfascism_wages_of_destruction
+    #custom_tooltip = "councilor_gfascism_wages_of_destruction_desc"
+	modifier = {
+        country_war_exhaustion_mult = -0.05
+		starbase_shipyard_build_cost_mult = -0.02
+		starbase_shipyard_build_speed_mult = 0.02
+		ships_upkeep_mult = -0.02
 	}
 }

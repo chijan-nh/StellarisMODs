@@ -12,3 +12,13 @@
  civic_gfascism_yokusan:0 "Winged Regime"
  civic_gfascism_yokusan_desc:0 "This civilization integrates all parties as a winged regime under the ruler and the leader of the winged regime is responsible for the practicalities of governing acts as the head of government."
  civic_tooltip_gfascism_yokusan_effects:0 "We obtain the casus belli §Y"Annex"§! which allows us to declare total war to other species. \nA vassal type §Y"Co-prosperity state"§! which sends naval caps to the overlord is lifted. \nDiplomatic attitudes from other species deteriorate since they refer us to fascists. \nOn the other hand, fascists only partially refer us to comrades"
+ civic_gfascism_wages_of_destruction:0 "Wages of Destruction"
+ civic_gfascism_wages_of_destruction_desc:0 "This civilization establishes a economic system based on exploitation by wars and continues to expand its military endlessly."
+ civic_tooltip_gfascism_wages_of_destruction_effects:0 "Additional energy, consumer goods, and alloys are obtained from POPs who are set to labor camp and neutering. Only in the war time, stability of planets and production of POP jobs improve and empire size penalty is greatly reduced. For the first 15 years, we can obtain resources derived from planetary unification."
+
+
+ gfascism_wages_of_destruction_start_modifier:0 "Outcome of Unification War"
+ gfascism_wages_of_destruction_start_modifier_desc:0 "We have finally unified our home planet. These resources should be put to good use by us, not by those who do not deserve to live."
+ gfascism_wages_of_destruction_modifier:0 "Wages of Destruction War"
+ gfascism_wages_of_destruction_modifier_desc:0 "We will either be a galactic power or will not be at all."
+

@@ -1371,6 +1371,9 @@
  preset_coprosperity:0 "共栄圏構成国"
  preset_coprosperity_desc:0 "共栄圏構成国は翼賛体制帝国の従属国であり、 宗主国に対して艦船と資源の支払いが義務づけられ、 見返りに研究助成を受けている。 また相互的な攻守同盟も内包するが、 外交権は宗主国に握られている。"
  preset_coprosperity_flavor_desc:0 "共栄圏構成国は翼賛体制帝国の従属形態である。 艦隊や物資そして戦争で宗主国の共栄圏構想を支援した見返りとして、 彼らには研究助成が与えられ、 軍事的に保護されている。"
+ preset_coprosperity_oppressive:0 "$preset_coprosperity$"
+ preset_coprosperity_oppressive_desc:0 "$preset_coprosperity_desc$"
+ preset_coprosperity_oppressive_flavor_desc:0 "$preset_coprosperity_flavor_desc$"
  naval_cap_coprosperity:0 "$preset_coprosperity$"
  not_allowed_for_coprosperity:0 "$TRIGGER_FAIL$§Y共栄圏構成国§!プリセットに適用できない。"
 

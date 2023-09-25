@@ -110,6 +110,64 @@ esoteric_fascist = {
 	}
 }
 
+ultra_militarist = {
+	aggressiveness = 10.0
+	trade_willingness = 0.75
+	bravery = 10.0
+	combat_bravery = 10.0
+
+	military_spending = 10.0
+	colony_spending = 2.5
+
+	federation_acceptance = -250
+	nap_acceptance = -250
+	commercial_pact_acceptance = -250
+	research_agreement_acceptance = -250
+	defensive_pact_acceptance = -250
+	migration_pact_acceptance = -250
+	loyalty_acceptance = 0.5
+
+	advanced_start_chance = 100
+
+	weapon_preferences = weapon_type_energy
+	armor_ratio = 0.6
+	shields_ratio = 0.4
+	hull_ratio = 0.0
+
+	threat_modifier = 0
+	threat_others_modifier = 0
+	friction_modifier = 0
+	claims_modifier = 0
+
+	behaviour = {
+		conqueror = yes
+		subjugator = no
+		liberator = no
+		slaver = no
+		opportunist = yes
+		uplifter = no
+		purger = yes
+		displacer = no
+		dominator = yes
+		infiltrator = no
+		robot_exploiter = yes
+		robot_liberator = no
+		propagator = no
+		multispecies = no
+		crisis_fighter = yes #crisis is also under species and 
+		attack_neutrals = no
+	}
+
+	allow = {
+		is_country_type = default
+		has_valid_civic = civic_gfascism_wages_of_destruction
+	}
+
+	weight_modifier = {
+		weight = 999
+	}
+}
+
 # POST-RELEASE LINEUP:
 # Peacekeeping Interventionists
 # Alluring Diplomats

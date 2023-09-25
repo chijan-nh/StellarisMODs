@@ -1,0 +1,70 @@
+namespace = gfascism
+
+#An empire who has wages of destruction begins a war
+country_event = {
+	id = gfascism.101
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		#is_ai = yes
+		is_country_type = default
+		#is_overlord = yes
+		#any_subject = {
+		#	is_country_type = default
+		#	any_agreement = { agreement_preset = preset_protectorate }
+		#	tech_unlocked_ratio = { who = overlord ratio < 0.5 }
+		#}
+        has_valid_civic = civic_gfascism_wages_of_destruction
+		not = { has_modifier = gfascism_wages_of_destruction_modifier }
+	}
+
+	immediate = {
+        add_modifier = { modifier = gfascism_wages_of_destruction_modifier }
+	}
+}
+#An empire who has wages of destruction ends a war
+country_event = {
+	id = gfascism.102
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		#is_ai = yes
+		is_country_type = default
+		is_at_war = no
+		#is_overlord = yes
+		#any_subject = {
+		#	is_country_type = default
+		#	any_agreement = { agreement_preset = preset_protectorate }
+		#	tech_unlocked_ratio = { who = overlord ratio < 0.5 }
+		#}
+        has_valid_civic = civic_gfascism_wages_of_destruction
+		has_modifier = gfascism_wages_of_destruction_modifier
+	}
+
+	immediate = {
+        remove_modifier = gfascism_wages_of_destruction_modifier
+	}
+}
+#An empire who has wages of destruction begins a game
+country_event = {
+	id = gfascism.103
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_country_type = default
+        has_valid_civic = civic_gfascism_wages_of_destruction
+		not = { has_modifier = gfascism_wages_of_destruction_start_modifier }
+		not = { has_country_flag = gfascism_wages_of_destruction_start_flag }
+	}
+
+	immediate = {
+        add_modifier = { 
+			modifier = gfascism_wages_of_destruction_start_modifier
+			years = 15
+		}
+		set_country_flag = gfascism_wages_of_destruction_start_flag
+	}
+}

@@ -1,0 +1,17 @@
+on_game_start_country = {
+	events = {
+		gfascism.103 #An empire who has wages of destruction begins a game
+	}
+}
+
+on_war_beginning = {
+	events = {
+		gfascism.101 #An empire who has wages of destruction begins a war
+	}
+}
+
+on_war_ended = {
+	events = {
+		gfascism.102 #An empire who has wages of destruction ends a war
+	}
+}

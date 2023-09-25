@@ -2,8 +2,13 @@
 
  casus_belli_cb_gfascism_annex:0 "Annex"
  casus_belli_cb_gfascism_annex_desc:0 "Underspeacies like them should be incorporated into our empire and contribute to the master species."
+ cb_gfascism_subjugation_yokusan:0 "Vassalize (Co-prosperity)"
+ cb_gfascism_subjugation_yokusan_desc:0 ""
 
  war_goal_wg_gfascism_annex:0 "Annex"
  war_goal_wg_gfascism_annex_desc:0 "By total war, acquire all the star systems and colonies of the enemy country."
  war_goal_wg_gfascism_annex_vs_fe:0 "Annex"
  war_goal_wg_gfascism_annex_vs_fe_desc:0 "By total war, acquire all the star systems and colonies of the enemy country."
+ war_goal_wg_gfascism_subjugation_yokusan:0 "Vassalize (Co-prosperity)"
+ war_goal_wg_gfascism_subjugation_yokusan_desc:0 "War is waged to subjugate the enemy as a Co-prosperity state.\n\nIn the event of a Status Quo peace, systems we occupy will be released as a new Co-prosperity state if they include at least one planet.\n\nInitial Agreement Terms of the Co-prosperity state are determined by our §Y$policy_subjugation_war_terms$§! Policy."
+

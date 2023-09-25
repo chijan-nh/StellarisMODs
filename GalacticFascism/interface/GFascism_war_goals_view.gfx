@@ -10,4 +10,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/diplomacy/diplomacy_war.dds"
 		noOfFrames = 2
 	}
+
+	spriteType = {
+		name = "GFX_wg_gfascism_subjugation_yokusan"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_is_coprosperity.dds"
+	}
 }

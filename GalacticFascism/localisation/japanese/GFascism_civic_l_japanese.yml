@@ -12,3 +12,12 @@
  civic_gfascism_yokusan:0 "翼賛体制"
  civic_gfascism_yokusan_desc:0 "この社会は、神聖不可侵な君主のもとで政党を統合し、その指導者が政府首班として実質的な統治を行う。"
  civic_tooltip_gfascism_yokusan_effects:0 "他種族に対して総力戦が可能な§Y「併合」§!の開戦事由を得る。\n艦隊許容量を得られる独自の従属国§Y「共栄圏構成国」§!が解禁される。\n他帝国からはファシズムの同類とみなされ外交態度が悪化する。一方、ファシスト政権国家からは完全な同志とはみなされない。"
+ civic_gfascism_wages_of_destruction:0 "破壊の経済"
+ civic_gfascism_wages_of_destruction_desc:0 "この社会では、 戦争による収奪を基にした経済体制を築いており、 果てしない軍拡を続けている。"
+ civic_tooltip_gfascism_wages_of_destruction_effects:0 "強制労働及び去勢中のPOPから追加のエネルギーと消費財と合金を得る。 戦争中のみ安定度と資源産出が改善し、帝国規模効果が大きく軽減される。 開始15年は惑星統一に由来する資源を得られる。"
+
+
+ gfascism_wages_of_destruction_start_modifier:0 "統一戦争の成果"
+ gfascism_wages_of_destruction_start_modifier_desc:0 "我々はついに母星を統一した。これらの資源は生きるに値しない者たちではなく我々が有効活用するべきだ。"
+ gfascism_wages_of_destruction_modifier:0 "破壊の戦争経済"
+ gfascism_wages_of_destruction_modifier_desc:0 "我々が銀河最強の国家となるか、それとも我々が消滅するかだ。"
